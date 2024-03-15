@@ -1,4 +1,4 @@
-namespace Project1
+﻿namespace Project1
 {
     public partial class Form1 : Form
     {
@@ -17,17 +17,29 @@ namespace Project1
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            // Ki?m tra th�ng tin ��ng nh?p
+            // Kiểm tra thông tin đăng nhập
             if (IsValidLogin(username, password))
             {
-                // ��ng nh?p th�nh c�ng
-                MessageBox.Show("��ng nh?p th�nh c�ng!");
-                // Th?c hi?n c�c h�nh �?ng sau khi ��ng nh?p th�nh c�ng
+                // Đăng nhập thành công
+                MessageBox.Show("Đăng nhập thành công!");
+                // Thực hiện các hành động sau khi đăng nhập thành công
             }
             else
             {
-                // ��ng nh?p th?t b?i
-                MessageBox.Show("��ng nh?p kh�ng th�nh c�ng. Vui l?ng ki?m tra l?i t�n ��ng nh?p v� m?t kh?u.");
+                // Đăng nhập thất bại
+                MessageBox.Show("Đăng nhập không thành công. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.");
+            }
+        }
+        private bool IsValidLogin(string username, string password)
+        {
+            // Kiểm tra tên đăng nhập và mật khẩu
+            if (username == "admin" && password == "admin")
+            {
+                return true; // Thông tin đăng nhập hợp lệ
+            }
+            else
+            {
+                return false; // Thông tin đăng nhập không hợp lệ
             }
         }
     }
