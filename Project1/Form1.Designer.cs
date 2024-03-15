@@ -32,7 +32,6 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnDangnhap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,21 +67,11 @@
             this.txtPassword.Size = new System.Drawing.Size(150, 31);
             this.txtPassword.TabIndex = 3;
             // 
-            // btnDangnhap
-            // 
-            this.btnDangnhap.Location = new System.Drawing.Point(319, 260);
-            this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(112, 34);
-            this.btnDangnhap.TabIndex = 4;
-            this.btnDangnhap.Text = "Dang nhap";
-            this.btnDangnhap.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnDangnhap);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtUsername);
@@ -100,6 +89,5 @@
         private TextBox txtUsername;
         private Button button1;
         private TextBox txtPassword;
-        private Button btnDangnhap;
     }
 }
