@@ -35,7 +35,7 @@
             // Kiểm tra tên đăng nhập và mật khẩu
             if (username == "admin" && password == "admin")
             {
-                return true; // Thông tin đăng nhập hợp lệ
+                return true; // Thông tin đăng nhập hợp lệ nhahah
             }
             else
             {
